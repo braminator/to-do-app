@@ -32,8 +32,8 @@ export const TaskList = ({ tasks, onDelete, onEdit, onAddNote }: ExtendedTaskLis
 
   return (
     <>
-      <Box sx={{ 
-        display: 'grid', 
+      <Box sx={{
+        display: 'grid',
         gap: 3,
         gridTemplateColumns: { 
           xs: '1fr', 
@@ -101,7 +101,7 @@ export const TaskList = ({ tasks, onDelete, onEdit, onAddNote }: ExtendedTaskLis
         <NotesDialog
           task={selectedTask}
           open={!!selectedTask}
-          onClose={() => setSelectedTask(null)}
+          onClose={handleCloseNotes}
           onAddNote={onAddNote}
         />
       )}

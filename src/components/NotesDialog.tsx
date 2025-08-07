@@ -8,8 +8,7 @@ import {
   TextField,
   Box,
   Typography,
-  Paper,
-  IconButton
+  Paper
 } from '@mui/material';
 import { format } from 'date-fns';
 import { type Task } from '../types';
